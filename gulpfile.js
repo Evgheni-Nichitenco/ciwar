@@ -62,13 +62,13 @@ gulp.task('clean', function del(cb) {
 
 // Copy fonts
 gulp.task('copy:fonts', function () {
-    return gulp.src('./source/fonts/**/*.*')
+    return gulp.src('source/fonts/**/*.*')
         .pipe(gulp.dest('build/fonts'));
 });
 
 // Copy images
 gulp.task('copy:images', function () {
-    return gulp.src('./source/images/**/*.*')
+    return gulp.src('source/images/**/*.*')
         .pipe(gulp.dest('build/images'));
 });
 
@@ -90,6 +90,7 @@ gulp.task('autoprefixer', () =>
 gulp.task('watch', function () {
     gulp.watch('source/template/**/*.pug', gulp.series('templates:compile'));
     gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'), gulp.series('autoprefixer'));
+    gulp.watch('source/images/**/*.*', gulp.series('copy:images'));
 });
 
 gulp.task('default', gulp.series(
