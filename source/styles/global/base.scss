@@ -19,6 +19,14 @@ body {
   background-repeat: repeat-y;
 }
 
+.layout {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
 ul,
 ol {
   list-style-type: none;
