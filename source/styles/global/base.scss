@@ -1,0 +1,30 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  background-image: url("../../images/body_texture.jpg");
+}
+
+.wrap {
+  max-width: 1150px;
+  background-image: url("../../images/sheet_ch1.png");
+  background-repeat: repeat-y;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

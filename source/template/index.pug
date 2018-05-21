@@ -8,13 +8,9 @@ html(lang='ru')
         title Redrick
 
     body
-        .wrap
-            header
-                .logo
-                    h1.logo-name Civilization War
-                    h2.logo-text Цивилизация и война
-            div.osnova
-                div.cont
-                    h1 Привет мир!
-                div.sidebar
-            footer
+        .wrap.container
+            include section/header
+
+            include section/wrap
+
+            include section/footer
