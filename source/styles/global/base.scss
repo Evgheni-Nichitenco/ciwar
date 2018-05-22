@@ -10,7 +10,7 @@ body {
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  background-image: url("../../images/body_texture.jpg");
+  background-image: url("../images/body_texture.jpg");
 }
 
 .wrap {
@@ -21,6 +21,7 @@ body {
 .layout {
   display: flex;
   justify-content: flex-end;
+  background-color: rgba(250, 235, 215, 0.19);
 
   width: 100%;
   margin: 0 auto;
