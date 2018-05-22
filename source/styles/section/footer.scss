@@ -1,0 +1,24 @@
+.footer {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background-image: url("../images/footer.png");
+
+  &-body {
+
+    &-text {
+      min-height: 24px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+
+      p {
+        margin: 0;
+        line-height: 3;
+        font-size: 14px;
+        color: #000;
+      }
+    }
+  }
+}

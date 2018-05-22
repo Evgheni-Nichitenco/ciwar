@@ -1,10 +1,30 @@
 .header {
 
   &__log {
+    position: relative;
     height: 164px;
     background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
+
+    &__text {
+      position: absolute;
+      top: 25px;
+      left: 1%;
+      text-align: left;
+      font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, Serif;
+      color: #E7DFD4;
+      margin: 0;
+      line-height: 0.7;
+
+      &-name {
+
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+
+      }
+    }
   }
 
   &__nav {
